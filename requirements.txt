@@ -1,0 +1,12 @@
+groq
+sentence-transformers
+numpy
+joblib
+scikit-learn>=1.6.0
+xgboost
+shap
+fastapi
+uvicorn[standard]
+requests
+streamlit
+plotly

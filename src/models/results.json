@@ -1,0 +1,55 @@
+{
+  "best_model": "XGBoost",
+  "feature_count": 17,
+  "features": [
+    "age",
+    "gender_encoded",
+    "adm_enc",
+    "HOSPITAL_EXPIRE_FLAG",
+    "ab_enc",
+    "org_enc",
+    "ab_total",
+    "ab_unique",
+    "ab_duration_days",
+    "lab_bun",
+    "lab_creatinine",
+    "lab_glucose",
+    "lab_hemoglobin",
+    "lab_platelets",
+    "lab_potassium",
+    "lab_sodium",
+    "lab_wbc"
+  ],
+  "leakage_removed": "DILUTION_VALUE",
+  "results": {
+    "XGBoost": {
+      "Accuracy": 0.890929,
+      "F1_Macro": 0.717954,
+      "Bal_Accuracy": 0.693279,
+      "MCC": 0.75302
+    },
+    "RandomForest": {
+      "Accuracy": 0.765979,
+      "F1_Macro": 0.613932,
+      "Bal_Accuracy": 0.703539,
+      "MCC": 0.54788
+    },
+    "NeuralNetwork": {
+      "Accuracy": 0.832361,
+      "F1_Macro": 0.591179,
+      "Bal_Accuracy": 0.575833,
+      "MCC": 0.612178
+    }
+  },
+  "best_xgb_params": {
+    "subsample": 0.6,
+    "reg_lambda": 2,
+    "reg_alpha": 0,
+    "n_estimators": 600,
+    "min_child_weight": 1,
+    "max_depth": 12,
+    "learning_rate": 0.1,
+    "gamma": 0.2,
+    "colsample_bytree": 0.6
+  }
+}
