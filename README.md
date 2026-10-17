@@ -1,11 +1,11 @@
-# AMR Prediction System - Production Ready
+# AMR Prediction System
 
 Autonomous AI System for Antibiotic Resistance Detection using MIMIC-III trained models.
 
 ## 📁 Project Structure
 
 ```
-aisde/
+AMR-Prediction/
 ├── src/                          # Source code
 │   ├── api/                      # REST API
 │   │   └── api.py               # FastAPI endpoints
@@ -29,8 +29,7 @@ aisde/
 │   └── test_api.py              # Integration tests
 │
 ├── requirements.txt              # Python dependencies
-├── start.sh                      # Startup script
-└── PROJECT_STATUS_REPORT.txt    # Current status report
+└── start.sh                      # Startup script
 ```
 
 ## 🚀 Quick Start
@@ -74,11 +73,11 @@ python tests/test_api.py
 
 ### Training Results (MIMIC-III 2001-2012)
 
-| Model | Accuracy | F1-Macro | Balanced Acc | MCC | Grade |
-|-------|----------|----------|--------------|-----|-------|
-| **XGBoost** | **89.1%** | **71.8%** | **69.3%** | **0.753** | **B+** |
-| RandomForest | 76.6% | 61.4% | 70.4% | 0.548 | C+ |
-| NeuralNetwork | 83.2% | 59.1% | 57.6% | 0.612 | C+ |
+| Model | Accuracy | F1-Macro | Balanced Acc | MCC |
+|-------|----------|----------|--------------|-----|
+| **XGBoost** | **89.1%** | **71.8%** | **69.3%** | **0.753** |
+| RandomForest | 76.6% | 61.4% | 70.4% | 0.548 |
+| NeuralNetwork | 83.2% | 59.1% | 57.6% | 0.612 |
 
 ### Real-World Testing (300 combinations)
 
